@@ -19,11 +19,11 @@ public class Test {
                 product3.name, product3.price, product3.description,
                 product3.category.name, product3.category.description);
 
-        SpecialOffer Promocja1 = new SpecialOffer(product1, "Promocja zimowa", "od 20.05 do 12.06", 0.20);
+        SpecialOffer promocja1 = new SpecialOffer(product1, "Promocja zimowa", "od 20.05 do 12.06", 0.20);
         System.out.printf("Opis promocji: %s\nCzas promocji: %s\nRabat: %2.2f zł \n" +
                 "Produkt: %s\nCena: %2.2f zł\nOpis produktu: %s\nKategoria: %s\nOpis kategorii: %s\n",
-                Promocja1.description, Promocja1.time, product1.price * Promocja1.discount,
-                Promocja1.promotion.name, Promocja1.promotion.price, Promocja1.promotion.description,
-                Promocja1.promotion.category.name, Promocja1.promotion.category.description);
+                promocja1.description, promocja1.time, product1.price * promocja1.discount,
+                promocja1.promotion.name, promocja1.promotion.price, promocja1.promotion.description,
+                promocja1.promotion.category.name, promocja1.promotion.category.description);
     }
 }
