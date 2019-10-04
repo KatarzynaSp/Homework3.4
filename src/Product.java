@@ -1,13 +1,13 @@
 public class Product {
     String name;
     double price;
-    String prodDescription;
+    String description;
     Category category;
 
-    public Product(String n, double pr, String prodDescr, Category cat) {
+    public Product(String n, double pr, String descr, Category categ) {
         name = n;
         price = pr;
-        prodDescription = prodDescr;
-        category = cat;
+        description = descr;
+        category = categ;
     }
 }

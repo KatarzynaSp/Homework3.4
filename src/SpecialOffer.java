@@ -1,13 +1,13 @@
 public class SpecialOffer {
-    Product productPromo;
-    String promoDescription;
+    Product promotion;
+    String description;
     String time;
     double discount;
 
-    public SpecialOffer(Product proPromo, String descr, String t, double disc) {
-        productPromo = proPromo;
-        promoDescription = descr;
+    public SpecialOffer(Product promo, String descr, String t, double d) {
+        promotion = promo;
+        description = descr;
         time = t;
-        discount = disc;
+        discount = d;
     }
 }

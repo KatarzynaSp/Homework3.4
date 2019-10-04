@@ -8,22 +8,22 @@ public class Test {
         Product product4 = new Product("Płyn do naczyń", 4.80, "Płyn ekologiczny do naczyń", null);
 
         System.out.printf("Produkt: %s\nCena:  %2.2f zł\nOpis produktu: %s\nKategoria: %s\nOpis kategorii: %s\n\n",
-                product1.name, product1.price, product1.prodDescription,
-                product1.category.catName, product1.category.catDescription);
+                product1.name, product1.price, product1.description,
+                product1.category.name, product1.category.description);
 
         System.out.printf("Produkt: %s\nCena:  %2.2f zł\nOpis produktu: %s\nKategoria: %s\nOpis kategorii: %s\n\n",
-                product2.name, product2.price, product2.prodDescription,
-                product2.category.catName, product2.category.catDescription);
+                product2.name, product2.price, product2.description,
+                product2.category.name, product2.category.description);
 
         System.out.printf("Produkt: %s\nCena:  %2.2f zł\nOpis produktu: %s\nKategoria: %s\nOpis kategorii: %s\n\n",
-                product3.name, product3.price, product3.prodDescription,
-                product3.category.catName, product3.category.catDescription);
+                product3.name, product3.price, product3.description,
+                product3.category.name, product3.category.description);
 
-        SpecialOffer productPromo1 = new SpecialOffer(product1, "Promocja zimowa", "od 20.05 do 12.06", 0.20);
+        SpecialOffer Promocja1 = new SpecialOffer(product1, "Promocja zimowa", "od 20.05 do 12.06", 0.20);
         System.out.printf("Opis promocji: %s\nCzas promocji: %s\nRabat: %2.2f zł \n" +
                 "Produkt: %s\nCena: %2.2f zł\nOpis produktu: %s\nKategoria: %s\nOpis kategorii: %s\n",
-                productPromo1.promoDescription, productPromo1.time, product1.price * productPromo1.discount,
-                productPromo1.productPromo.name, productPromo1.productPromo.price, productPromo1.productPromo.prodDescription,
-                productPromo1.productPromo.category.catName, productPromo1.productPromo.category.catDescription);
+                Promocja1.description, Promocja1.time, product1.price * Promocja1.discount,
+                Promocja1.promotion.name, Promocja1.promotion.price, Promocja1.promotion.description,
+                Promocja1.promotion.category.name, Promocja1.promotion.category.description);
     }
 }
